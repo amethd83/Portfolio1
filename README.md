@@ -15,7 +15,7 @@ In the web design, we added name, description of the user, images, skills, work 
 
 ## Contributing
 Sole Author: Mouhamed Diop
-If you have soemthing you'd like to contribute, make a pull request
+If you have something you'd like to contribute, make a pull request
 
 ## Questions?
 Please feel free to contact me with any questions via Email or Linkedin.
