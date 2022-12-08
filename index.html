@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fd515701f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/Screenshot 2022-12-03 223727.png"height="65" alt="Logo">
+
+        <ul id="sidemenu">
+          <div class="topright">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+          <p>Front End Developer/ Accountant</p>
+          <br>
+          <h1>Hi,<span> I'm Mouhamed Diop </span> <br> from Seattle, Washington</h1>
+        </div>
+    </div>
+
+  </div>
+  <!---about-->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/Main pict.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <br>
+          <p>My passion for accounting and business management come from my experiences as a student who confronted my own learning differences.
+            This journey has led me to appreciate and enjoy solving problems to pursue my career in supporting companies to achieve their goals.
+            In fact, I have leveraged technology such as the latest accounting software's to improve my skills and adapt to the modern world.
+
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Front End </span><br>Developer</li>
+              <li><span>App </span><br>Developer</li>
+              <li><span>Accounting </span><br>Finance</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022 </span><br>Generation USA</li>
+              <li><span>2016 </span><br>Business Management at State University of New York</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---service--->
+  <div id="hobbies">
+    <div class="container">
+    <h1>My Hobbies</h1>
+    <div class="hobbies-list">
+      <div>
+        <i class="fa-regular fa-futbol"></i>
+
+        <h2>Soccer</h2>
+        <br>
+
+        <p>Playing soccer as a hobby is an excellent way to spend
+          our leisure time. It is fun, healthy, and sociable and gives you a great opportunity to compete
+        </p>
+        <br>
+        <a href="">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-medal"></i>
+
+        <h2>Learning new skills</h2>
+        <br>
+
+        <p>Focusing on improving and learning in several areas is a fantastic hobby to have.
+          You can learn about various topics, be it specific interests, creativity, social elements, or even physical activities.
+        </p>
+        <br>
+        <a href="">Learn more</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!------portfolio----->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/Work1.jpg" width="800px">
+          <div class="layer">
+            <h3>Accounting</h3>
+            <p>I managed accounts receivables and payables. I also prepare initial financial statements. Finally, I reconciled monthly
+              vendor statemetns and month end reports for the General ledger. </p>
+             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Work2.jpg"width="800px" >
+          <div class="layer">
+            <h3>Web Developer</h3>
+            <p>Tech is one of the top growing industries as companies push to adopt more digital technologies. I transitioned into tech because it suits
+              the best. It allows me to be creative, learn new skills, and adopt to the modern technologies </p>
+             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-----contact---->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i> amethd83@gmail.com</p>
+          <p> <i class="fa-solid fa-phone-volume"></i> 646-641-4796</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mouhamed-diop-45abc/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/amethd83"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © Mouhamed. Made by <i class="fa-solid fa-heart"></i> Mouhamed DIop </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<script>
+
+              var tablinks = document.getElementsByClassName("tab-links");
+              var tabcontents = document.getElementsByClassName("tab-contents");
+
+              function opentab(tabname){
+                for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+              }
+
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby2XkxZFR29GjZeyOis-3_E8WgcFF9i6wvGCHCT16HBApEhPZ5ba7KH_4JfQRRnJY71/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent succesfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
